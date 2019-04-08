@@ -12,11 +12,10 @@ public class ImagesChooser {
 		FileChooser fileChooser = new FileChooser();
 		// 设置文件选择器标题
 		fileChooser.setTitle("View Pictures");
-		// 设置初始位置
-        fileChooser.setInitialDirectory(new File(System.getProperty("user.home")));
+		// 设置初始位置:user.dir用户的当前工作目录 
+        fileChooser.setInitialDirectory(new File(System.getProperty("user.dir")));
         // 设置可读取的文件类型
         fileChooser.getExtensionFilters().addAll(
-                new FileChooser.ExtensionFilter("All Images", "*.*"),
                 new FileChooser.ExtensionFilter("JPG", "*.jpg"),
                 new FileChooser.ExtensionFilter("PNG", "*.png")
         );

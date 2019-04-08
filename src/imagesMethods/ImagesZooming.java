@@ -17,8 +17,7 @@ public class ImagesZooming {
 		BufferedImage sourceImg=ImageIO.read(new FileInputStream(picture));
 		int x = sourceImg.getWidth();
 		int y = sourceImg.getHeight();
-		System.out.println(x);
-		System.out.println(y);
+
 		int view_x = 160*4;
 		int view_y = 110*4; 
 		while(x < view_x && y <view_y) {
@@ -39,8 +38,6 @@ public class ImagesZooming {
 				x = view_x;
 			}
 		}
-		System.out.println(x);
-		System.out.println(y);
 		
 		BufferedImage bufferedImage=new BufferedImage(x,y,BufferedImage.TYPE_INT_RGB);
         Graphics graphics=bufferedImage.getGraphics();

@@ -60,7 +60,7 @@ public class _06_minRect {
 			Point points[] = new Point[4];
 			rects.get(i).points(points);
 			for (int j = 0; j < 4; ++j) {
-				Imgproc.line(source, points[j], points[(j + 1) % 4], new Scalar(0, 0, 255));
+				Imgproc.line(source, points[j], points[(j + 1) % 4], new Scalar(255, 255, 255),4);
 			}
 		}
 		// ±£´æÍ¼Æ¬ 

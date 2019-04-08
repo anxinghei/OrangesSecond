@@ -4,6 +4,7 @@ package application;
 import javafx.fxml.FXML;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -35,6 +36,8 @@ public class OrangesGUIController {
 	private ImageView imv;
 	@FXML
 	private Button next;
+	@FXML
+	private TextField oranges;
 	// 读取图片序列
 	private static int num=0;
 	// 原图片地址
@@ -54,7 +57,7 @@ public class OrangesGUIController {
 			// 设置图片的地址，使得能用于显示
 			String string=strSpilt[0]+"\\"+strings[num-1];
 			ImagesToShowing(string);
-			System.out.println(string);
+	
 		}
 	}
 	
@@ -75,8 +78,8 @@ public class OrangesGUIController {
 			// 设置图片的地址，使得能用于显示
 			String string=strSpilt[0]+"\\"+strings[num-1];
 			ImagesToShowing(string);
-			System.out.println(string);
 		}
+		
 	}
 	
 	// 图片（待识别）的选择与展示
@@ -96,6 +99,7 @@ public class OrangesGUIController {
 			string=_04_Expanding.Qingshi(string);
 			string=_05_KaiYunSuan.Kai(string);
 			a=_06_minRect.minRect(string);
+			oranges.setText(""+a);
 		}
 	
 	}

@@ -17,7 +17,7 @@ public class _05_KaiYunSuan {
 		// ∂¡»°Õº∆¨
 		Mat src = Imgcodecs.imread(string);
 		Mat dst = new Mat();
-		Mat kernel = Imgproc.getStructuringElement(Imgproc.MORPH_ELLIPSE, new Size((0 * 2) + 1, (0 * 2) + 1));
+		Mat kernel = Imgproc.getStructuringElement(Imgproc.MORPH_ELLIPSE, new Size( 1,  1));
 		Imgproc.morphologyEx(src, dst,Imgproc.MORPH_OPEN, kernel);
 		// ±£¥ÊÕº∆¨
 		String url=ImagesSaving.ImagesNameToSaving(string, 5);

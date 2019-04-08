@@ -29,7 +29,7 @@ public class _03_CannyEdges {
 		Imgproc.cvtColor(src, gray, Imgproc.COLOR_BGR2GRAY);
 		Mat dst = new Mat();
 		int size = 20;
-		Imgproc.Canny(gray, dst, size, size * 4);
+		Imgproc.Canny(gray, dst, size, size * 8);
 		// not ·´É« £¬and ±£Áô¸ÌéÙ
 		Mat dst_and = new Mat();
 		Core.bitwise_not(dst,dst);

@@ -19,7 +19,7 @@ public class _04_Expanding {
 		Mat src = Imgcodecs.imread(string);
 		// ¸¯Ê´
 		Mat dst = new Mat();
-		Mat kernel = Imgproc.getStructuringElement(Imgproc.MORPH_RECT, new Size(5, 5));
+		Mat kernel = Imgproc.getStructuringElement(Imgproc.MORPH_RECT, new Size(3, 3));
 		Imgproc.erode(src, dst, kernel);
 		// ±£´æÍ¼Æ¬
 		String url=ImagesSaving.ImagesNameToSaving(string, 4);

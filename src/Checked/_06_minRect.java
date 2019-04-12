@@ -47,7 +47,7 @@ public class _06_minRect {
 		// 面积筛选，添加外接矩形
 		for (int i = 0; i < matOfPoint.size()-1; i++) {
 			area = Imgproc.contourArea(matOfPoint.get(i));
-			if (area > 3000) {
+			if (area > 1300 ) {
 				a++;
 				matOfPoint2f = new MatOfPoint2f(matOfPoint.get(i).toArray());
 				rects.add(Imgproc.minAreaRect(matOfPoint2f));

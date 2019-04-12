@@ -18,6 +18,7 @@ import Checked._03_CannyEdges;
 import Checked._04_Expanding;
 import Checked._05_KaiYunSuan;
 import Checked._06_minRect;
+import Checked.imFilling;
 import imagesMethods.ImagesChooser;
 import imagesMethods.ImagesGeting;
 import imagesMethods.ImagesName;
@@ -93,7 +94,7 @@ public class OrangesGUIController {
 			num=0;
 			// Õº∆¨œ‘ æ xxx\\xxx\\0.jpg
 			String string=ImagesToShowing(str);
-			string=_01_ColorFilter.Shaixuan(string);
+			string=imFilling.Shaixuan(string);
 			string=_02_MedianBlur.Blur(string);
 			string=_03_CannyEdges.Edges(string);
 			string=_04_Expanding.Qingshi(string);
